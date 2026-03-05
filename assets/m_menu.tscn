@@ -183,10 +183,10 @@ texture_pressed = ExtResource("12_41huc")
 
 [node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430]
 layout_mode = 0
-offset_left = -194.00009
-offset_top = 1301.9998
-offset_right = -80.00009
-offset_bottom = 1415.9998
+offset_left = 428.00037
+offset_top = 419.99994
+offset_right = 542.00037
+offset_bottom = 533.99994
 scale = Vector2(11, 11)
 pivot_offset = Vector2(57, 57)
 texture_normal = ExtResource("13_41huc")
