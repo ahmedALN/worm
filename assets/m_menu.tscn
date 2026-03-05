@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://b151c01i5i1jw"]
+
+[ext_resource type="Script" uid="uid://dv71da5rbgvw3" path="res://m_menu.gd" id="1_iolfh"]
+[ext_resource type="Texture2D" uid="uid://begw2t6nxu0px" path="res://assets/WORM!-4/6.png" id="2_7vamm"]
+[ext_resource type="Texture2D" uid="uid://cldwm0jg1fivo" path="res://assets/WORM!-7.png" id="2_i1tx1"]
+[ext_resource type="Texture2D" uid="uid://r313ovjt7xgq" path="res://assets/WORM!-4/2.png" id="3_i1tx1"]
+[ext_resource type="FontFile" uid="uid://dvlroxe8qj313" path="res://assets/arcade-classic-font/ArcadeClassic-ov2x.ttf" id="3_vvngx"]
+[ext_resource type="Script" uid="uid://dg4yn5od3hv7m" path="res://assets/bird.gd" id="4_17v55"]
+[ext_resource type="Texture2D" uid="uid://ck0n83t3s0u38" path="res://assets/WORM!-4/7.png" id="4_avak6"]
+[ext_resource type="Texture2D" uid="uid://c5vo28vb3ahss" path="res://assets/WORM!-4/3.png" id="5_01ud6"]
+[ext_resource type="Script" uid="uid://clao5tiomjwy5" path="res://assets/bird_2.gd" id="5_altb8"]
+[ext_resource type="Texture2D" uid="uid://b33fljyfcc8mb" path="res://assets/WORM!-4/8.png" id="6_41huc"]
+[ext_resource type="Texture2D" uid="uid://bnxs6us3ejg6t" path="res://assets/WORM!-4/4.png" id="7_a13dm"]
+[ext_resource type="Texture2D" uid="uid://deotn3i6btlq7" path="res://assets/WORM!-4/9.png" id="8_vvngx"]
+[ext_resource type="Texture2D" uid="uid://brw467e02w66t" path="res://assets/WORM!-4/5.png" id="9_j37ye"]
+[ext_resource type="Texture2D" uid="uid://dpdwkm52j4v1s" path="res://assets/WORM!-6/3.png" id="11_01ud6"]
+[ext_resource type="Texture2D" uid="uid://b5t58k7j2aoqs" path="res://assets/WORM!-6/WORM!-10.png" id="12_41huc"]
+[ext_resource type="Texture2D" uid="uid://v2yhy00rbtm6" path="res://assets/WORM!-6/2.png" id="13_41huc"]
+[ext_resource type="Script" uid="uid://d0dj8axnckfs0" path="res://assets/info.gd" id="14_a13dm"]
+
+[sub_resource type="Animation" id="Animation_41huc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button Manager/INFO:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(11, 11)]
+}
+
+[sub_resource type="Animation" id="Animation_a13dm"]
+resource_name = "pop"
+length = 0.0201
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button Manager/INFO:scale")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.00010000169, 0, 0.020042941, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vvngx"]
+_data = {
+&"RESET": SubResource("Animation_41huc"),
+&"pop": SubResource("Animation_a13dm")
+}
+
+[node name="MMenu" type="Node2D" unique_id=1487026263]
+script = ExtResource("1_iolfh")
+
+[node name="Worm!7" type="Sprite2D" parent="." unique_id=50054932]
+texture = ExtResource("2_i1tx1")
+offset = Vector2(400, 400)
+
+[node name="WORM2" type="Label" parent="." unique_id=1674386770]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 230.0
+offset_top = 41.0
+offset_right = 560.0
+offset_bottom = 178.0
+grow_vertical = 0
+pivot_offset = Vector2(165, 68.5)
+theme_override_colors/font_color = Color(0, 0, 0, 0.60784316)
+theme_override_fonts/font = ExtResource("3_vvngx")
+theme_override_font_sizes/font_size = 100
+text = "WORM"
+
+[node name="WORM" type="Label" parent="." unique_id=525208743]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 227.0
+offset_top = 40.0
+offset_right = 557.0
+offset_bottom = 177.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9882353, 0.5921569, 0.60784316, 1)
+theme_override_fonts/font = ExtResource("3_vvngx")
+theme_override_font_sizes/font_size = 100
+text = "WORM"
+
+[node name="Bird" type="Label" parent="." unique_id=1760708279]
+offset_left = 146.0
+offset_top = 139.0
+offset_right = 733.0
+offset_bottom = 177.0
+scale = Vector2(0.8, 0.8)
+theme_override_colors/font_color = Color(0.2921899, 0.29219007, 0.29219002, 1)
+theme_override_fonts/font = ExtResource("3_vvngx")
+theme_override_font_sizes/font_size = 45
+text = "The Bird Is Watching."
+script = ExtResource("4_17v55")
+
+[node name="Bird2" type="Label" parent="." unique_id=1703358459]
+offset_left = 141.0
+offset_top = 138.0
+offset_right = 728.0
+offset_bottom = 176.0
+scale = Vector2(0.8, 0.8)
+theme_override_fonts/font = ExtResource("3_vvngx")
+theme_override_font_sizes/font_size = 45
+text = "The Bird Is Watching."
+script = ExtResource("5_altb8")
+
+[node name="Button Manager" type="Control" parent="." unique_id=1818347859]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 800.0
+offset_bottom = 800.0
+
+[node name="START" type="TextureButton" parent="Button Manager" unique_id=20128085]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -18.501001
+anchor_top = -3.9750001
+anchor_right = -18.501001
+anchor_bottom = -3.9750001
+offset_left = 15007.801
+offset_top = 3547.0
+offset_right = 15357.801
+offset_bottom = 3637.0
+texture_normal = ExtResource("2_7vamm")
+texture_hover = ExtResource("3_i1tx1")
+stretch_mode = 0
+
+[node name="LEVEL" type="TextureButton" parent="Button Manager" unique_id=846739786]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 547.0
+offset_right = 554.0
+offset_bottom = 637.0
+texture_normal = ExtResource("4_avak6")
+texture_hover = ExtResource("5_01ud6")
+
+[node name="OPTIONS" type="TextureButton" parent="Button Manager" unique_id=543856218]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 454.0
+offset_right = 556.0
+offset_bottom = 544.0
+texture_normal = ExtResource("6_41huc")
+texture_hover = ExtResource("7_a13dm")
+stretch_mode = 0
+
+[node name="QUIT" type="TextureButton" parent="Button Manager" unique_id=1164401480]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.7575
+anchor_top = -23.61375
+anchor_right = 29.3275
+anchor_bottom = -17.05375
+offset_left = -8400.0
+offset_top = 19528.0
+offset_right = -22906.0
+offset_bottom = 14370.0
+texture_normal = ExtResource("8_vvngx")
+texture_hover = ExtResource("9_j37ye")
+stretch_mode = 4
+metadata/_edit_use_anchors_ = true
+
+[node name="VOLUME" type="TextureButton" parent="Button Manager" unique_id=1589044850]
+layout_mode = 0
+offset_left = 731.0
+offset_top = 748.0
+offset_right = 800.0
+offset_bottom = 800.0
+toggle_mode = true
+texture_normal = ExtResource("11_01ud6")
+texture_pressed = ExtResource("12_41huc")
+
+[node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 526.0
+offset_right = 611.0
+offset_bottom = 640.0
+scale = Vector2(11, 11)
+pivot_offset = Vector2(57, 57)
+texture_normal = ExtResource("13_41huc")
+script = ExtResource("14_a13dm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Button Manager/INFO" unique_id=1434479155]
+root_node = NodePath("../../..")
+libraries/ = SubResource("AnimationLibrary_vvngx")
+autoplay = &"pop"
+
+[connection signal="pressed" from="Button Manager/START" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Button Manager/LEVEL" to="." method="_on_level_pressed"]
+[connection signal="pressed" from="Button Manager/OPTIONS" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="Button Manager/QUIT" to="." method="_on_quit_pressed"]
+[connection signal="toggled" from="Button Manager/VOLUME" to="." method="_on_volume_toggled"]
+[connection signal="button_down" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_button_down"]
+[connection signal="mouse_entered" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_mouse_exited"]
+[connection signal="pressed" from="Button Manager/INFO" to="." method="_on_info_pressed"]
