@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772748153
+=======
 export_presets.cfg::TextFile::-1::1772747645::0::1::::<><><>0<>0<><>::
 game.tscn::PackedScene::2339232912365267238::1772747645::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::2160285115249520790::1772747645::1772748080::1::::<><><>0<>0<>f6240adee4641fa408230d565fa6b518<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
@@ -7,11 +7,11 @@ level.tscn::PackedScene::1537638208390095696::1772747645::0::1::::<><><>0<>0<><>
 m_menu.gd::GDScript::8700871901919670716::1772747645::0::1::::<>Node2D<><>0<>0<><>::
 options.tscn::PackedScene::2050732475851402999::1772747645::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1772747645::0::1::::<><><>0<>0<><>::
-::res://assets/::1772748057
+::res://assets/::1772748169
 bird.gd::GDScript::7641744088424180088::1772747645::0::1::::<>Label<><>0<>0<><>::
 bird_2.gd::GDScript::5545823270075035758::1772747645::0::1::::<>Label<><>0<>0<><>::
 info.gd::GDScript::8920781695550286049::1772747645::0::1::::<>TextureButton<><>0<>0<><>::
-m_menu.tscn::PackedScene::4274845517956060880::1772747645::0::1::::<><><>0<>0<><>::uid://dv71da5rbgvw3::::res://m_menu.gd<>uid://begw2t6nxu0px::::res://assets/WORM!-4/6.png<>uid://cldwm0jg1fivo::::res://assets/WORM!-7.png<>uid://r313ovjt7xgq::::res://assets/WORM!-4/2.png<>uid://dvlroxe8qj313::::res://assets/arcade-classic-font/ArcadeClassic-ov2x.ttf<>uid://dg4yn5od3hv7m::::res://assets/bird.gd<>uid://ck0n83t3s0u38::::res://assets/WORM!-4/7.png<>uid://c5vo28vb3ahss::::res://assets/WORM!-4/3.png<>uid://clao5tiomjwy5::::res://assets/bird_2.gd<>uid://b33fljyfcc8mb::::res://assets/WORM!-4/8.png<>uid://bnxs6us3ejg6t::::res://assets/WORM!-4/4.png<>uid://deotn3i6btlq7::::res://assets/WORM!-4/9.png<>uid://brw467e02w66t::::res://assets/WORM!-4/5.png<>uid://dpdwkm52j4v1s::::res://assets/WORM!-6/3.png<>uid://b5t58k7j2aoqs::::res://assets/WORM!-6/WORM!-10.png<>uid://v2yhy00rbtm6::::res://assets/WORM!-6/2.png<>uid://d0dj8axnckfs0::::res://assets/info.gd
+m_menu.tscn::PackedScene::4274845517956060880::1772748169::0::1::::<><><>0<>0<><>::uid://dv71da5rbgvw3::::res://m_menu.gd<>uid://begw2t6nxu0px::::res://assets/WORM!-4/6.png<>uid://cldwm0jg1fivo::::res://assets/WORM!-7.png<>uid://r313ovjt7xgq::::res://assets/WORM!-4/2.png<>uid://dvlroxe8qj313::::res://assets/arcade-classic-font/ArcadeClassic-ov2x.ttf<>uid://dg4yn5od3hv7m::::res://assets/bird.gd<>uid://ck0n83t3s0u38::::res://assets/WORM!-4/7.png<>uid://c5vo28vb3ahss::::res://assets/WORM!-4/3.png<>uid://clao5tiomjwy5::::res://assets/bird_2.gd<>uid://b33fljyfcc8mb::::res://assets/WORM!-4/8.png<>uid://bnxs6us3ejg6t::::res://assets/WORM!-4/4.png<>uid://deotn3i6btlq7::::res://assets/WORM!-4/9.png<>uid://brw467e02w66t::::res://assets/WORM!-4/5.png<>uid://dpdwkm52j4v1s::::res://assets/WORM!-6/3.png<>uid://b5t58k7j2aoqs::::res://assets/WORM!-6/WORM!-10.png<>uid://v2yhy00rbtm6::::res://assets/WORM!-6/2.png<>uid://d0dj8axnckfs0::::res://assets/info.gd
 WORM!-7.png::CompressedTexture2D::5552470311329015744::1772747645::1772747766::1::::<><><>0<>0<>d387e68963d34f0200c1e83685f051ef<>res://.godot/imported/WORM!-7.png-a2be96128069834f8896f31b313ca64e.ctex::
 ::res://assets/arcade-classic-font/::1772747766
 ArcadeClassic-ov2x.ttf::FontFile::8656994328501747560::1772747645::1772747766::1::::<><><>0<>0<>41a1fcf1d20a2fc3a097f59139d5817c<>res://.godot/imported/ArcadeClassic-ov2x.ttf-0a93ba82447a693de0846050043cf043.fontdata::
