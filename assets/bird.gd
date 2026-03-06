@@ -1,7 +1,7 @@
 extends Label
 
 @export var pop_scale: Vector2 = Vector2(0.9, 0.9)
-@export var duration: float = 0.8
+@export var duration: float = 0.45
 
 func _ready():
 	# Crucial: Labels need their pivot set to the center to scale outwards

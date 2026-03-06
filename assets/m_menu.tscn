@@ -11,50 +11,12 @@
 [ext_resource type="Script" uid="uid://clao5tiomjwy5" path="res://assets/bird_2.gd" id="5_altb8"]
 [ext_resource type="Texture2D" uid="uid://b33fljyfcc8mb" path="res://assets/WORM!-4/8.png" id="6_41huc"]
 [ext_resource type="Texture2D" uid="uid://bnxs6us3ejg6t" path="res://assets/WORM!-4/4.png" id="7_a13dm"]
-[ext_resource type="Texture2D" uid="uid://deotn3i6btlq7" path="res://assets/WORM!-4/9.png" id="8_vvngx"]
-[ext_resource type="Texture2D" uid="uid://brw467e02w66t" path="res://assets/WORM!-4/5.png" id="9_j37ye"]
 [ext_resource type="Texture2D" uid="uid://dpdwkm52j4v1s" path="res://assets/WORM!-6/3.png" id="11_01ud6"]
+[ext_resource type="Texture2D" uid="uid://brwj2pehw2h62" path="res://assets/WORM!-7/2.png" id="12_17v55"]
 [ext_resource type="Texture2D" uid="uid://b5t58k7j2aoqs" path="res://assets/WORM!-6/WORM!-10.png" id="12_41huc"]
 [ext_resource type="Texture2D" uid="uid://v2yhy00rbtm6" path="res://assets/WORM!-6/2.png" id="13_41huc"]
+[ext_resource type="Texture2D" uid="uid://dg1nii0j1ofj1" path="res://assets/WORM!-7/3.png" id="13_altb8"]
 [ext_resource type="Script" uid="uid://d0dj8axnckfs0" path="res://assets/info.gd" id="14_a13dm"]
-
-[sub_resource type="Animation" id="Animation_41huc"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Button Manager/INFO:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(11, 11)]
-}
-
-[sub_resource type="Animation" id="Animation_a13dm"]
-resource_name = "pop"
-length = 0.0201
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Button Manager/INFO:scale")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.00010000169, 0, 0.020042941, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1), Vector2(1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_vvngx"]
-_data = {
-&"RESET": SubResource("Animation_41huc"),
-&"pop": SubResource("Animation_a13dm")
-}
 
 [node name="MMenu" type="Node2D" unique_id=1487026263]
 script = ExtResource("1_iolfh")
@@ -158,16 +120,16 @@ stretch_mode = 0
 [node name="QUIT" type="TextureButton" parent="Button Manager" unique_id=1164401480]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 10.7575
-anchor_top = -23.61375
-anchor_right = 29.3275
-anchor_bottom = -17.05375
+anchor_left = 10.88
+anchor_top = -23.63
+anchor_right = 29.2125
+anchor_bottom = -17.048748
 offset_left = -8400.0
 offset_top = 19528.0
 offset_right = -22906.0
 offset_bottom = 14370.0
-texture_normal = ExtResource("8_vvngx")
-texture_hover = ExtResource("9_j37ye")
+texture_normal = ExtResource("12_17v55")
+texture_hover = ExtResource("13_altb8")
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
@@ -183,19 +145,13 @@ texture_pressed = ExtResource("12_41huc")
 
 [node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430]
 layout_mode = 0
-offset_left = 1369.9999
-offset_top = -191.99988
-offset_right = 1483.9999
-offset_bottom = -77.99988
-scale = Vector2(11, 11)
+offset_left = 90.0
+offset_top = 210.0
+offset_right = 204.0
+offset_bottom = 324.0
 pivot_offset = Vector2(57, 57)
 texture_normal = ExtResource("13_41huc")
 script = ExtResource("14_a13dm")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Button Manager/INFO" unique_id=1434479155]
-root_node = NodePath("../../..")
-libraries/ = SubResource("AnimationLibrary_vvngx")
-autoplay = &"pop"
 
 [connection signal="pressed" from="Button Manager/START" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button Manager/LEVEL" to="." method="_on_level_pressed"]
