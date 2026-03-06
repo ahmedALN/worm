@@ -14,18 +14,23 @@
 [ext_resource type="Texture2D" uid="uid://dpdwkm52j4v1s" path="res://assets/WORM!-6/3.png" id="11_01ud6"]
 [ext_resource type="Texture2D" uid="uid://brwj2pehw2h62" path="res://assets/WORM!-7/2.png" id="12_17v55"]
 [ext_resource type="Texture2D" uid="uid://b5t58k7j2aoqs" path="res://assets/WORM!-6/WORM!-10.png" id="12_41huc"]
-[ext_resource type="Texture2D" uid="uid://v2yhy00rbtm6" path="res://assets/WORM!-6/2.png" id="13_41huc"]
 [ext_resource type="Texture2D" uid="uid://dg1nii0j1ofj1" path="res://assets/WORM!-7/3.png" id="13_altb8"]
 [ext_resource type="Script" uid="uid://d0dj8axnckfs0" path="res://assets/info.gd" id="14_a13dm"]
+[ext_resource type="Texture2D" uid="uid://ifkcy8rf0pvb" path="res://assets/WORM!-6/WORM!-15.png" id="16_altb8"]
+[ext_resource type="Texture2D" uid="uid://goev3b5hns10" path="res://assets/WORM!-6/WORM!-15 copy.png" id="17_a1fts"]
+[ext_resource type="Texture2D" uid="uid://c6uuy1q7es5gx" path="res://assets/WORM!-14.png" id="18_altb8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ayojp"]
 
 [node name="MMenu" type="Node2D" unique_id=1487026263]
+material = SubResource("ShaderMaterial_ayojp")
 script = ExtResource("1_iolfh")
 
 [node name="Worm!7" type="Sprite2D" parent="." unique_id=50054932]
 texture = ExtResource("2_i1tx1")
 offset = Vector2(400, 400)
 
-[node name="WORM2" type="Label" parent="." unique_id=1674386770]
+[node name="WORM2" type="Label" parent="." unique_id=1674386770 groups=["mmenu_buttons"]]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -40,7 +45,7 @@ theme_override_fonts/font = ExtResource("3_vvngx")
 theme_override_font_sizes/font_size = 100
 text = "WORM"
 
-[node name="WORM" type="Label" parent="." unique_id=525208743]
+[node name="WORM" type="Label" parent="." unique_id=525208743 groups=["mmenu_buttons"]]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -54,7 +59,7 @@ theme_override_fonts/font = ExtResource("3_vvngx")
 theme_override_font_sizes/font_size = 100
 text = "WORM"
 
-[node name="Bird" type="Label" parent="." unique_id=1760708279]
+[node name="Bird" type="Label" parent="." unique_id=1760708279 groups=["mmenu_buttons"]]
 offset_left = 146.0
 offset_top = 139.0
 offset_right = 733.0
@@ -66,7 +71,7 @@ theme_override_font_sizes/font_size = 45
 text = "The Bird Is Watching."
 script = ExtResource("4_17v55")
 
-[node name="Bird2" type="Label" parent="." unique_id=1703358459]
+[node name="Bird2" type="Label" parent="." unique_id=1703358459 groups=["mmenu_buttons"]]
 offset_left = 141.0
 offset_top = 138.0
 offset_right = 728.0
@@ -83,7 +88,17 @@ anchors_preset = 0
 offset_right = 800.0
 offset_bottom = 800.0
 
-[node name="START" type="TextureButton" parent="Button Manager" unique_id=20128085]
+[node name="back" type="TextureButton" parent="Button Manager" unique_id=908188506 groups=["info_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = -19.0
+offset_right = 163.0
+offset_bottom = 88.0
+texture_normal = ExtResource("12_17v55")
+texture_hover = ExtResource("13_altb8")
+
+[node name="START" type="TextureButton" parent="Button Manager" unique_id=20128085 groups=["mmenu_buttons"]]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -18.501001
@@ -98,7 +113,7 @@ texture_normal = ExtResource("2_7vamm")
 texture_hover = ExtResource("3_i1tx1")
 stretch_mode = 0
 
-[node name="LEVEL" type="TextureButton" parent="Button Manager" unique_id=846739786]
+[node name="LEVEL" type="TextureButton" parent="Button Manager" unique_id=846739786 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 204.0
 offset_top = 547.0
@@ -107,7 +122,7 @@ offset_bottom = 637.0
 texture_normal = ExtResource("4_avak6")
 texture_hover = ExtResource("5_01ud6")
 
-[node name="OPTIONS" type="TextureButton" parent="Button Manager" unique_id=543856218]
+[node name="OPTIONS" type="TextureButton" parent="Button Manager" unique_id=543856218 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 206.0
 offset_top = 454.0
@@ -117,7 +132,7 @@ texture_normal = ExtResource("6_41huc")
 texture_hover = ExtResource("7_a13dm")
 stretch_mode = 0
 
-[node name="QUIT" type="TextureButton" parent="Button Manager" unique_id=1164401480]
+[node name="QUIT" type="TextureButton" parent="Button Manager" unique_id=1164401480 groups=["mmenu_buttons"]]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 10.88
@@ -133,7 +148,7 @@ texture_hover = ExtResource("13_altb8")
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="VOLUME" type="TextureButton" parent="Button Manager" unique_id=1589044850]
+[node name="VOLUME" type="TextureButton" parent="Button Manager" unique_id=1589044850 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 731.0
 offset_top = 748.0
@@ -143,22 +158,26 @@ toggle_mode = true
 texture_normal = ExtResource("11_01ud6")
 texture_pressed = ExtResource("12_41huc")
 
-[node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430]
+[node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 90.0
 offset_top = 210.0
 offset_right = 204.0
 offset_bottom = 324.0
 pivot_offset = Vector2(57, 57)
-texture_normal = ExtResource("13_41huc")
+texture_normal = ExtResource("16_altb8")
+texture_hover = ExtResource("17_a1fts")
 script = ExtResource("14_a13dm")
 
+[node name="Worm!14" type="Sprite2D" parent="Button Manager" unique_id=908674713 groups=["info_buttons"]]
+visible = false
+position = Vector2(420, 403)
+texture = ExtResource("18_altb8")
+
+[connection signal="pressed" from="Button Manager/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Button Manager/START" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button Manager/LEVEL" to="." method="_on_level_pressed"]
 [connection signal="pressed" from="Button Manager/OPTIONS" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Button Manager/QUIT" to="." method="_on_quit_pressed"]
 [connection signal="toggled" from="Button Manager/VOLUME" to="." method="_on_volume_toggled"]
-[connection signal="button_down" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_button_down"]
-[connection signal="mouse_entered" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_mouse_exited"]
 [connection signal="pressed" from="Button Manager/INFO" to="." method="_on_info_pressed"]
