@@ -19,6 +19,28 @@
 [ext_resource type="Texture2D" uid="uid://ifkcy8rf0pvb" path="res://assets/WORM!-6/WORM!-15.png" id="16_altb8"]
 [ext_resource type="Texture2D" uid="uid://goev3b5hns10" path="res://assets/WORM!-6/WORM!-15 copy.png" id="17_a1fts"]
 [ext_resource type="Texture2D" uid="uid://c6uuy1q7es5gx" path="res://assets/WORM!-14.png" id="18_altb8"]
+[ext_resource type="Texture2D" uid="uid://b1rm7gqcyep4y" path="res://assets/WORM!/12.png" id="20_twjof"]
+[ext_resource type="Texture2D" uid="uid://dj6bk4gurkihs" path="res://assets/WORM!/13.png" id="21_18ypd"]
+[ext_resource type="Texture2D" uid="uid://ck75cfx8gulum" path="res://assets/WORM!/26.png" id="22_j5pos"]
+[ext_resource type="Texture2D" uid="uid://doj774fgf1tw3" path="res://assets/WORM!/25.png" id="23_2robu"]
+[ext_resource type="Texture2D" uid="uid://bslh0haky42l2" path="res://assets/WORM!/24.png" id="24_fdwe4"]
+[ext_resource type="Texture2D" uid="uid://8romptsm0spk" path="res://assets/WORM!/23.png" id="25_fhmve"]
+[ext_resource type="Texture2D" uid="uid://dettutnn6rv5t" path="res://assets/WORM!/7.png" id="26_r3orm"]
+[ext_resource type="Texture2D" uid="uid://b6pcwg8hxd5d1" path="res://assets/WORM!/6.png" id="27_bimbp"]
+[ext_resource type="Texture2D" uid="uid://dxb1uqsuxsjiq" path="res://assets/WORM!/16.png" id="28_sk1gq"]
+[ext_resource type="Texture2D" uid="uid://1q7g1d4mblgr" path="res://assets/WORM!/17.png" id="29_pmoi2"]
+[ext_resource type="Texture2D" uid="uid://dorblrl37cb10" path="res://assets/WORM!/8.png" id="30_u3crs"]
+[ext_resource type="Texture2D" uid="uid://4khwcqrt4ybf" path="res://assets/WORM!/9.png" id="31_gg2s1"]
+[ext_resource type="Texture2D" uid="uid://c0w2dsnk4jhmg" path="res://assets/WORM!/18.png" id="32_warb2"]
+[ext_resource type="Texture2D" uid="uid://defov4wmj8etq" path="res://assets/WORM!/10.png" id="33_a3anu"]
+[ext_resource type="Texture2D" uid="uid://bmmrbdtdfry3k" path="res://assets/WORM!/11.png" id="34_ewmt4"]
+[ext_resource type="Texture2D" uid="uid://sxfx3dxr84oa" path="res://assets/WORM!/20.png" id="35_11irh"]
+[ext_resource type="Texture2D" uid="uid://byaf3hhpr2232" path="res://assets/WORM!/19.png" id="36_g3ubb"]
+[ext_resource type="Texture2D" uid="uid://cmu6p0lc7uftc" path="res://assets/WORM!/14.png" id="37_w13nb"]
+[ext_resource type="Texture2D" uid="uid://mkpc4735k4br" path="res://assets/WORM!/15.png" id="38_1bof6"]
+[ext_resource type="Texture2D" uid="uid://dfavjwuxj3k7m" path="res://assets/WORM!/22.png" id="39_0dwdt"]
+[ext_resource type="Texture2D" uid="uid://ew2qugeburf4" path="res://assets/WORM!/21.png" id="40_em2x3"]
+[ext_resource type="Texture2D" uid="uid://bgkjl5l1dgy10" path="res://assets/WORM!/WORM! (3).png" id="41_a7cv0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ayojp"]
 
@@ -88,7 +110,7 @@ anchors_preset = 0
 offset_right = 800.0
 offset_bottom = 800.0
 
-[node name="back" type="TextureButton" parent="Button Manager" unique_id=908188506 groups=["info_buttons"]]
+[node name="back" type="TextureButton" parent="Button Manager" unique_id=908188506 groups=["Level_buttons", "info_buttons"]]
 visible = false
 layout_mode = 0
 offset_left = 3.0
@@ -173,6 +195,122 @@ script = ExtResource("14_a13dm")
 visible = false
 position = Vector2(420, 403)
 texture = ExtResource("18_altb8")
+
+[node name="Balloon5" type="TextureButton" parent="Button Manager" unique_id=1583168505 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 456.0
+offset_top = 528.0
+offset_right = 497.0
+offset_bottom = 665.0
+texture_normal = ExtResource("20_twjof")
+texture_disabled = ExtResource("21_18ypd")
+
+[node name="Trail1" type="TextureButton" parent="Button Manager" unique_id=2037147305 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 534.0
+offset_top = 647.0
+offset_right = 852.0
+offset_bottom = 785.0
+texture_normal = ExtResource("22_j5pos")
+texture_disabled = ExtResource("23_2robu")
+
+[node name="Trail2" type="TextureButton" parent="Button Manager" unique_id=523255537 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 138.0
+offset_top = 635.0
+offset_right = 548.0
+offset_bottom = 773.0
+texture_normal = ExtResource("24_fdwe4")
+texture_disabled = ExtResource("25_fhmve")
+
+[node name="Button25" type="TextureButton" parent="Button Manager" unique_id=1172506026 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 631.0
+offset_top = 15.0
+offset_right = 709.0
+offset_bottom = 151.0
+texture_normal = ExtResource("26_r3orm")
+texture_disabled = ExtResource("27_bimbp")
+
+[node name="Trail6" type="TextureButton" parent="Button Manager" unique_id=2008456657 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 543.0
+offset_top = 129.0
+offset_right = 707.0
+offset_bottom = 350.0
+texture_normal = ExtResource("28_sk1gq")
+texture_disabled = ExtResource("29_pmoi2")
+
+[node name="Balloon20" type="TextureButton" parent="Button Manager" unique_id=1489098348 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 487.0
+offset_top = 168.0
+offset_right = 565.0
+offset_bottom = 304.0
+texture_normal = ExtResource("30_u3crs")
+texture_disabled = ExtResource("31_gg2s1")
+
+[node name="Trail5" type="TextureButton" parent="Button Manager" unique_id=1770414807 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 381.0
+offset_top = 270.0
+offset_right = 565.0
+offset_bottom = 509.0
+texture_normal = ExtResource("32_warb2")
+texture_disabled = ExtResource("29_pmoi2")
+
+[node name="Balloon15" type="TextureButton" parent="Button Manager" unique_id=607068810 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 333.0
+offset_top = 318.0
+offset_right = 411.0
+offset_bottom = 454.0
+texture_normal = ExtResource("33_a3anu")
+texture_disabled = ExtResource("34_ewmt4")
+
+[node name="Trail4" type="TextureButton" parent="Button Manager" unique_id=554814366 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 210.0
+offset_top = 427.0
+offset_right = 417.0
+offset_bottom = 689.0
+texture_normal = ExtResource("35_11irh")
+texture_disabled = ExtResource("36_g3ubb")
+
+[node name="Balloon10" type="TextureButton" parent="Button Manager" unique_id=1019375460 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 171.0
+offset_top = 495.0
+offset_right = 242.0
+offset_bottom = 632.0
+texture_normal = ExtResource("37_w13nb")
+texture_disabled = ExtResource("38_1bof6")
+
+[node name="Trail3" type="TextureButton" parent="Button Manager" unique_id=856885491 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 47.0
+offset_top = 596.0
+offset_right = 257.0
+offset_bottom = 756.0
+texture_normal = ExtResource("39_0dwdt")
+texture_disabled = ExtResource("40_em2x3")
+
+[node name="Worm!(3)" type="Sprite2D" parent="." unique_id=634755870 groups=["Level_buttons"]]
+visible = false
+position = Vector2(378.87506, 75)
+scale = Vector2(1.4461652, 1.4213483)
+texture = ExtResource("41_a7cv0")
 
 [connection signal="pressed" from="Button Manager/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Button Manager/START" to="." method="_on_start_pressed"]

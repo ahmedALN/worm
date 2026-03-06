@@ -23,8 +23,11 @@ func _on_start_pressed() -> void:
 	get_tree().change_scene_to_file("res://game.tscn")
 
 func _on_level_pressed() -> void:
-	get_tree().change_scene_to_file("res://level.tscn")
-
+	for node in get_tree().get_nodes_in_group("mmenu_buttons"):
+		node.visible = false 
+	for node in get_tree().get_nodes_in_group("Level_buttons"):
+		node.visible = true 
+	
 func _on_options_pressed() -> void:
 	get_tree().change_scene_to_file("res://options.tscn")
 
@@ -45,4 +48,7 @@ func _on_back_pressed() -> void:
 		node.visible = true
 	for node in get_tree().get_nodes_in_group("info_buttons"):
 		node.visible = false 
+	for node in get_tree().get_nodes_in_group("Level_buttons"):
+		node.visible = false
+	
 	
