@@ -11,59 +11,48 @@
 [ext_resource type="Script" uid="uid://clao5tiomjwy5" path="res://assets/bird_2.gd" id="5_altb8"]
 [ext_resource type="Texture2D" uid="uid://b33fljyfcc8mb" path="res://assets/WORM!-4/8.png" id="6_41huc"]
 [ext_resource type="Texture2D" uid="uid://bnxs6us3ejg6t" path="res://assets/WORM!-4/4.png" id="7_a13dm"]
-[ext_resource type="Texture2D" uid="uid://deotn3i6btlq7" path="res://assets/WORM!-4/9.png" id="8_vvngx"]
-[ext_resource type="Texture2D" uid="uid://brw467e02w66t" path="res://assets/WORM!-4/5.png" id="9_j37ye"]
 [ext_resource type="Texture2D" uid="uid://dpdwkm52j4v1s" path="res://assets/WORM!-6/3.png" id="11_01ud6"]
+[ext_resource type="Texture2D" uid="uid://brwj2pehw2h62" path="res://assets/WORM!-7/2.png" id="12_17v55"]
 [ext_resource type="Texture2D" uid="uid://b5t58k7j2aoqs" path="res://assets/WORM!-6/WORM!-10.png" id="12_41huc"]
-[ext_resource type="Texture2D" uid="uid://v2yhy00rbtm6" path="res://assets/WORM!-6/2.png" id="13_41huc"]
+[ext_resource type="Texture2D" uid="uid://dg1nii0j1ofj1" path="res://assets/WORM!-7/3.png" id="13_altb8"]
 [ext_resource type="Script" uid="uid://d0dj8axnckfs0" path="res://assets/info.gd" id="14_a13dm"]
+[ext_resource type="Texture2D" uid="uid://ifkcy8rf0pvb" path="res://assets/WORM!-6/WORM!-15.png" id="16_altb8"]
+[ext_resource type="Texture2D" uid="uid://goev3b5hns10" path="res://assets/WORM!-6/WORM!-15 copy.png" id="17_a1fts"]
+[ext_resource type="Texture2D" uid="uid://c6uuy1q7es5gx" path="res://assets/WORM!-14.png" id="18_altb8"]
+[ext_resource type="Texture2D" uid="uid://b1rm7gqcyep4y" path="res://assets/WORM!/12.png" id="20_twjof"]
+[ext_resource type="Texture2D" uid="uid://dj6bk4gurkihs" path="res://assets/WORM!/13.png" id="21_18ypd"]
+[ext_resource type="Texture2D" uid="uid://ck75cfx8gulum" path="res://assets/WORM!/26.png" id="22_j5pos"]
+[ext_resource type="Texture2D" uid="uid://doj774fgf1tw3" path="res://assets/WORM!/25.png" id="23_2robu"]
+[ext_resource type="Texture2D" uid="uid://bslh0haky42l2" path="res://assets/WORM!/24.png" id="24_fdwe4"]
+[ext_resource type="Texture2D" uid="uid://8romptsm0spk" path="res://assets/WORM!/23.png" id="25_fhmve"]
+[ext_resource type="Texture2D" uid="uid://dettutnn6rv5t" path="res://assets/WORM!/7.png" id="26_r3orm"]
+[ext_resource type="Texture2D" uid="uid://b6pcwg8hxd5d1" path="res://assets/WORM!/6.png" id="27_bimbp"]
+[ext_resource type="Texture2D" uid="uid://dxb1uqsuxsjiq" path="res://assets/WORM!/16.png" id="28_sk1gq"]
+[ext_resource type="Texture2D" uid="uid://1q7g1d4mblgr" path="res://assets/WORM!/17.png" id="29_pmoi2"]
+[ext_resource type="Texture2D" uid="uid://dorblrl37cb10" path="res://assets/WORM!/8.png" id="30_u3crs"]
+[ext_resource type="Texture2D" uid="uid://4khwcqrt4ybf" path="res://assets/WORM!/9.png" id="31_gg2s1"]
+[ext_resource type="Texture2D" uid="uid://c0w2dsnk4jhmg" path="res://assets/WORM!/18.png" id="32_warb2"]
+[ext_resource type="Texture2D" uid="uid://defov4wmj8etq" path="res://assets/WORM!/10.png" id="33_a3anu"]
+[ext_resource type="Texture2D" uid="uid://bmmrbdtdfry3k" path="res://assets/WORM!/11.png" id="34_ewmt4"]
+[ext_resource type="Texture2D" uid="uid://sxfx3dxr84oa" path="res://assets/WORM!/20.png" id="35_11irh"]
+[ext_resource type="Texture2D" uid="uid://byaf3hhpr2232" path="res://assets/WORM!/19.png" id="36_g3ubb"]
+[ext_resource type="Texture2D" uid="uid://cmu6p0lc7uftc" path="res://assets/WORM!/14.png" id="37_w13nb"]
+[ext_resource type="Texture2D" uid="uid://mkpc4735k4br" path="res://assets/WORM!/15.png" id="38_1bof6"]
+[ext_resource type="Texture2D" uid="uid://dfavjwuxj3k7m" path="res://assets/WORM!/22.png" id="39_0dwdt"]
+[ext_resource type="Texture2D" uid="uid://ew2qugeburf4" path="res://assets/WORM!/21.png" id="40_em2x3"]
+[ext_resource type="Texture2D" uid="uid://bgkjl5l1dgy10" path="res://assets/WORM!/WORM! (3).png" id="41_a7cv0"]
 
-[sub_resource type="Animation" id="Animation_41huc"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Button Manager/INFO:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(11, 11)]
-}
-
-[sub_resource type="Animation" id="Animation_a13dm"]
-resource_name = "pop"
-length = 0.0201
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Button Manager/INFO:scale")
-tracks/0/interp = 0
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(-0.00010000169, 0, 0.020042941, 2),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2), Vector2(1, 1), Vector2(1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_vvngx"]
-_data = {
-&"RESET": SubResource("Animation_41huc"),
-&"pop": SubResource("Animation_a13dm")
-}
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ayojp"]
 
 [node name="MMenu" type="Node2D" unique_id=1487026263]
+material = SubResource("ShaderMaterial_ayojp")
 script = ExtResource("1_iolfh")
 
 [node name="Worm!7" type="Sprite2D" parent="." unique_id=50054932]
 texture = ExtResource("2_i1tx1")
 offset = Vector2(400, 400)
 
-[node name="WORM2" type="Label" parent="." unique_id=1674386770]
+[node name="WORM2" type="Label" parent="." unique_id=1674386770 groups=["mmenu_buttons"]]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -78,7 +67,7 @@ theme_override_fonts/font = ExtResource("3_vvngx")
 theme_override_font_sizes/font_size = 100
 text = "WORM"
 
-[node name="WORM" type="Label" parent="." unique_id=525208743]
+[node name="WORM" type="Label" parent="." unique_id=525208743 groups=["mmenu_buttons"]]
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -92,7 +81,7 @@ theme_override_fonts/font = ExtResource("3_vvngx")
 theme_override_font_sizes/font_size = 100
 text = "WORM"
 
-[node name="Bird" type="Label" parent="." unique_id=1760708279]
+[node name="Bird" type="Label" parent="." unique_id=1760708279 groups=["mmenu_buttons"]]
 offset_left = 146.0
 offset_top = 139.0
 offset_right = 733.0
@@ -104,7 +93,7 @@ theme_override_font_sizes/font_size = 45
 text = "The Bird Is Watching."
 script = ExtResource("4_17v55")
 
-[node name="Bird2" type="Label" parent="." unique_id=1703358459]
+[node name="Bird2" type="Label" parent="." unique_id=1703358459 groups=["mmenu_buttons"]]
 offset_left = 141.0
 offset_top = 138.0
 offset_right = 728.0
@@ -121,7 +110,17 @@ anchors_preset = 0
 offset_right = 800.0
 offset_bottom = 800.0
 
-[node name="START" type="TextureButton" parent="Button Manager" unique_id=20128085]
+[node name="back" type="TextureButton" parent="Button Manager" unique_id=908188506 groups=["Level_buttons", "info_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = -19.0
+offset_right = 163.0
+offset_bottom = 88.0
+texture_normal = ExtResource("12_17v55")
+texture_hover = ExtResource("13_altb8")
+
+[node name="START" type="TextureButton" parent="Button Manager" unique_id=20128085 groups=["mmenu_buttons"]]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -18.501001
@@ -136,7 +135,7 @@ texture_normal = ExtResource("2_7vamm")
 texture_hover = ExtResource("3_i1tx1")
 stretch_mode = 0
 
-[node name="LEVEL" type="TextureButton" parent="Button Manager" unique_id=846739786]
+[node name="LEVEL" type="TextureButton" parent="Button Manager" unique_id=846739786 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 204.0
 offset_top = 547.0
@@ -145,7 +144,7 @@ offset_bottom = 637.0
 texture_normal = ExtResource("4_avak6")
 texture_hover = ExtResource("5_01ud6")
 
-[node name="OPTIONS" type="TextureButton" parent="Button Manager" unique_id=543856218]
+[node name="OPTIONS" type="TextureButton" parent="Button Manager" unique_id=543856218 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 206.0
 offset_top = 454.0
@@ -155,23 +154,23 @@ texture_normal = ExtResource("6_41huc")
 texture_hover = ExtResource("7_a13dm")
 stretch_mode = 0
 
-[node name="QUIT" type="TextureButton" parent="Button Manager" unique_id=1164401480]
+[node name="QUIT" type="TextureButton" parent="Button Manager" unique_id=1164401480 groups=["mmenu_buttons"]]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 10.7575
-anchor_top = -23.61375
-anchor_right = 29.3275
-anchor_bottom = -17.05375
+anchor_left = 10.88
+anchor_top = -23.63
+anchor_right = 29.2125
+anchor_bottom = -17.048748
 offset_left = -8400.0
 offset_top = 19528.0
 offset_right = -22906.0
 offset_bottom = 14370.0
-texture_normal = ExtResource("8_vvngx")
-texture_hover = ExtResource("9_j37ye")
+texture_normal = ExtResource("12_17v55")
+texture_hover = ExtResource("13_altb8")
 stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
-[node name="VOLUME" type="TextureButton" parent="Button Manager" unique_id=1589044850]
+[node name="VOLUME" type="TextureButton" parent="Button Manager" unique_id=1589044850 groups=["mmenu_buttons"]]
 layout_mode = 0
 offset_left = 731.0
 offset_top = 748.0
@@ -181,28 +180,142 @@ toggle_mode = true
 texture_normal = ExtResource("11_01ud6")
 texture_pressed = ExtResource("12_41huc")
 
-[node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430]
+[node name="INFO" type="TextureButton" parent="Button Manager" unique_id=1084063430 groups=["mmenu_buttons"]]
 layout_mode = 0
-offset_left = 428.00037
-offset_top = 419.99994
-offset_right = 542.00037
-offset_bottom = 533.99994
-scale = Vector2(11, 11)
+offset_left = 90.0
+offset_top = 210.0
+offset_right = 204.0
+offset_bottom = 324.0
 pivot_offset = Vector2(57, 57)
-texture_normal = ExtResource("13_41huc")
+texture_normal = ExtResource("16_altb8")
+texture_hover = ExtResource("17_a1fts")
 script = ExtResource("14_a13dm")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Button Manager/INFO" unique_id=1434479155]
-root_node = NodePath("../../..")
-libraries/ = SubResource("AnimationLibrary_vvngx")
-autoplay = &"pop"
+[node name="Worm!14" type="Sprite2D" parent="Button Manager" unique_id=908674713 groups=["info_buttons"]]
+visible = false
+position = Vector2(420, 403)
+texture = ExtResource("18_altb8")
 
+[node name="Balloon5" type="TextureButton" parent="Button Manager" unique_id=1583168505 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 456.0
+offset_top = 528.0
+offset_right = 497.0
+offset_bottom = 665.0
+texture_normal = ExtResource("20_twjof")
+texture_disabled = ExtResource("21_18ypd")
+
+[node name="Trail1" type="TextureButton" parent="Button Manager" unique_id=2037147305 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 534.0
+offset_top = 647.0
+offset_right = 852.0
+offset_bottom = 785.0
+texture_normal = ExtResource("22_j5pos")
+texture_disabled = ExtResource("23_2robu")
+
+[node name="Trail2" type="TextureButton" parent="Button Manager" unique_id=523255537 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 138.0
+offset_top = 635.0
+offset_right = 548.0
+offset_bottom = 773.0
+texture_normal = ExtResource("24_fdwe4")
+texture_disabled = ExtResource("25_fhmve")
+
+[node name="Button25" type="TextureButton" parent="Button Manager" unique_id=1172506026 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 631.0
+offset_top = 15.0
+offset_right = 709.0
+offset_bottom = 151.0
+texture_normal = ExtResource("26_r3orm")
+texture_disabled = ExtResource("27_bimbp")
+
+[node name="Trail6" type="TextureButton" parent="Button Manager" unique_id=2008456657 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 543.0
+offset_top = 129.0
+offset_right = 707.0
+offset_bottom = 350.0
+texture_normal = ExtResource("28_sk1gq")
+texture_disabled = ExtResource("29_pmoi2")
+
+[node name="Balloon20" type="TextureButton" parent="Button Manager" unique_id=1489098348 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 487.0
+offset_top = 168.0
+offset_right = 565.0
+offset_bottom = 304.0
+texture_normal = ExtResource("30_u3crs")
+texture_disabled = ExtResource("31_gg2s1")
+
+[node name="Trail5" type="TextureButton" parent="Button Manager" unique_id=1770414807 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 381.0
+offset_top = 270.0
+offset_right = 565.0
+offset_bottom = 509.0
+texture_normal = ExtResource("32_warb2")
+texture_disabled = ExtResource("29_pmoi2")
+
+[node name="Balloon15" type="TextureButton" parent="Button Manager" unique_id=607068810 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 333.0
+offset_top = 318.0
+offset_right = 411.0
+offset_bottom = 454.0
+texture_normal = ExtResource("33_a3anu")
+texture_disabled = ExtResource("34_ewmt4")
+
+[node name="Trail4" type="TextureButton" parent="Button Manager" unique_id=554814366 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 210.0
+offset_top = 427.0
+offset_right = 417.0
+offset_bottom = 689.0
+texture_normal = ExtResource("35_11irh")
+texture_disabled = ExtResource("36_g3ubb")
+
+[node name="Balloon10" type="TextureButton" parent="Button Manager" unique_id=1019375460 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 171.0
+offset_top = 495.0
+offset_right = 242.0
+offset_bottom = 632.0
+texture_normal = ExtResource("37_w13nb")
+texture_disabled = ExtResource("38_1bof6")
+
+[node name="Trail3" type="TextureButton" parent="Button Manager" unique_id=856885491 groups=["Level_buttons"]]
+visible = false
+layout_mode = 0
+offset_left = 47.0
+offset_top = 596.0
+offset_right = 257.0
+offset_bottom = 756.0
+texture_normal = ExtResource("39_0dwdt")
+texture_disabled = ExtResource("40_em2x3")
+
+[node name="Worm!(3)" type="Sprite2D" parent="." unique_id=634755870 groups=["Level_buttons"]]
+visible = false
+position = Vector2(378.87506, 75)
+scale = Vector2(1.4461652, 1.4213483)
+texture = ExtResource("41_a7cv0")
+
+[connection signal="pressed" from="Button Manager/back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Button Manager/START" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button Manager/LEVEL" to="." method="_on_level_pressed"]
 [connection signal="pressed" from="Button Manager/OPTIONS" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Button Manager/QUIT" to="." method="_on_quit_pressed"]
 [connection signal="toggled" from="Button Manager/VOLUME" to="." method="_on_volume_toggled"]
-[connection signal="button_down" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_button_down"]
-[connection signal="mouse_entered" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Button Manager/INFO" to="Button Manager/INFO" method="_on_mouse_exited"]
 [connection signal="pressed" from="Button Manager/INFO" to="." method="_on_info_pressed"]

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cyvoky0dp5qjt"]
+
+[ext_resource type="Script" uid="uid://460vatuori3v" path="res://info.gd" id="1_y06mq"]
+[ext_resource type="Texture2D" uid="uid://c6uuy1q7es5gx" path="res://assets/WORM!-14.png" id="3_ohlig"]
+[ext_resource type="Texture2D" uid="uid://brwj2pehw2h62" path="res://assets/WORM!-7/2.png" id="4_apbm5"]
+[ext_resource type="Texture2D" uid="uid://dg1nii0j1ofj1" path="res://assets/WORM!-7/3.png" id="5_dnune"]
+
+[node name="INFO" type="Node2D" unique_id=214618009]
+script = ExtResource("1_y06mq")
+
+[node name="Worm!14" type="Sprite2D" parent="." unique_id=1270530644]
+position = Vector2(403, 401)
+texture = ExtResource("3_ohlig")
+
+[node name="Button" type="TextureButton" parent="." unique_id=493811792]
+offset_top = 1.0
+offset_right = 41.0
+offset_bottom = 32.0
+texture_normal = ExtResource("4_apbm5")
+texture_hover = ExtResource("5_dnune")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
